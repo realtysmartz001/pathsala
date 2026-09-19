@@ -13,6 +13,10 @@ config.php
 uploads/*
 !uploads/.htaccess
 
+# Large files
+*.zip
+index.zip
+
 # Vendor
 vendor/
 

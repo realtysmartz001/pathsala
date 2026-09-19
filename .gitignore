@@ -1,8 +1,8 @@
 # Database configuration files
-includes/db_connect.php
-includes/db.php
-includes/db_user.php
-includes/db_contact.php
+# includes/db_connect.php
+# includes/db.php
+# includes/db_user.php
+# includes/db_contact.php
 
 # Sensitive files
 .env

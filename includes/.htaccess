@@ -1,0 +1,20 @@
+Options -Indexes
+
+# Prevent direct access to sensitive configuration files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|json|xml|yml|yaml)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent direct access to database connection files
+<Files "db_connect.php">
+    Require all denied
+</Files>
+<Files "db.php">
+    Require all denied
+</Files>
+<Files "db_user.php">
+    Require all denied
+</Files>
+<Files "db_contact.php">
+    Require all denied
+</Files>

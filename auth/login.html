@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login | Realty Smartz Pathshala</title>
+    <meta name="description" content="Login to your Realty Smartz Pathshala account.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/slicknav.css">
+    <link rel="stylesheet" href="../assets/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="../assets/css/gijgo.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/animated-headline.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+
+    <style>
+        .login-body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-color: var(--bg-dark);
+            position: relative;
+        }
+
+        /* Video bg overlay so theme colors still read through */
+        .login-body::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(var(--bg-overlay-1), var(--bg-overlay-2));
+            z-index: 0;
+        }
+
+        .login-top-bar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 40px;
+        }
+
+        .login-top-bar .login-logo img {
+            height: 46px;
+            filter: drop-shadow(0 0 10px rgba(201, 147, 58, 0.3));
+        }
+
+        [data-theme="light"] .login-top-bar .login-logo img { filter: none; }
+
+        .login-back-home {
+            color: var(--text-secondary);
+            font-size: 13.5px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 18px;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            background: var(--glass);
+            transition: all 0.3s;
+        }
+
+        .login-back-home:hover {
+            color: var(--gold-primary);
+            border-color: var(--gold-primary);
+            background: var(--glass-hover);
+        }
+
+        .login-form {
+            position: relative;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            width: 440px;
+            padding: 70px 40px 45px;
+            transform: translate(-50%, -50%);
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            box-shadow: var(--shadow-card);
+            border-radius: 18px;
+        }
+
+        @media (max-width: 575px) {
+            .login-form {
+                width: 88%;
+                padding: 70px 22px 30px;
+            }
+            .login-top-bar { padding: 18px 20px; }
+        }
+
+        .login-form .logo-login img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            position: absolute;
+            top: -45px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border: 3px solid var(--gold-primary);
+            box-shadow: 0 10px 25px rgba(201, 147, 58, 0.3);
+            border-radius: 50%;
+            background: var(--bg-dark);
+        }
+
+        .login-form h2 {
+            color: var(--text-main);
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            margin: 0;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 34px;
+        }
+
+        .login-form .form-input {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .login-form .form-input label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .login-form .form-input input {
+            outline: none;
+            height: 44px;
+            padding: 8px 4px;
+            box-sizing: border-box;
+            width: 100%;
+            background: transparent;
+            font-size: 16px;
+            border: none;
+            color: var(--text-main);
+            border-bottom: 1.5px solid var(--card-border);
+            transition: border-color 0.3s;
+        }
+
+        .login-form .form-input input:focus {
+            border-bottom-color: var(--gold-primary);
+        }
+
+        .login-form .form-input input::placeholder {
+            color: var(--text-dim);
+        }
+
+        .login-form .form-input input[type="submit"] {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-hover));
+            color: var(--bg-dark);
+            border: none;
+            border-bottom: none;
+            cursor: pointer;
+            text-transform: capitalize;
+            line-height: 1;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 14px;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(201, 147, 58, 0.30);
+            transition: all 0.3s;
+        }
+
+        .login-form .form-input input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(201, 147, 58, 0.45);
+        }
+
+        .login-form p {
+            text-align: center;
+            margin-top: 22px;
+            margin-bottom: 0;
+        }
+
+        .login-form .forget {
+            display: block;
+            color: var(--gold-primary);
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        .login-form .forget:hover {
+            color: var(--gold-hover);
+        }
+
+        .login-form .registration {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        .login-form .registration:hover {
+            color: var(--gold-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+    <div class="pre-wrap">
+        <div class="pre-loader">
+            <img src="../assets/img/logo/loader.webp" alt="Loading">
+        </div>
+
+        <p class="pre-text">
+            Preparing Your Success Path...
+        </p>
+    </div>
+</div>
+    <!-- Preloader Start-->
+
+    <!-- Lightweight top bar — logo + theme toggle + back to home -->
+    <div class="login-top-bar">
+        <a href="../index.php" class="login-logo">
+            <img src="../assets/img/logo/Pathshala.webp" alt="Realty Smartz Pathshala">
+        </a>
+        <a href="../index.php" class="login-back-home">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+        <span class="icon-dark">🌙</span>
+        <span class="icon-light">☀️</span>
+    </button>
+
+    <main class="login-body" data-vide-bg="../assets/img/login-bg.mp4">
+        <div class="login-form">
+            <!-- logo and title -->
+            <div class="logo-login">
+                <img src="../assets/img/logo/loader.webp" alt="">
+            </div>
+            <h2>Login Here</h2>
+
+            <form class="form-default" action="../auth/login.php" method="POST">
+                <div class="form-input">
+                    <label for="name">Email</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-input">
+                    <label for="name">Password</label>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-input" style="display:flex; align-items:center; gap:8px; margin: 14px 0 0;">
+                    <input type="checkbox" name="remember" id="remember" style="width:16px; height:16px; accent-color:var(--gold-primary); cursor:pointer;">
+                    <label for="remember" style="margin:0; font-size:13.5px; font-weight:500; color:var(--text-muted); cursor:pointer;">Remember me</label>
+                </div>
+                <div class="form-input pt-30">
+                    <input type="submit" name="submit" value="login">
+                </div>
+            </form>
+
+            <!-- Forget Password link OUTSIDE the form -->
+            <p><a href="forgot_password.html" class="forget">Forgot Password ?</a></p>
+            <!-- Registration link -->
+            <a href="register.html" class="registration">Registration</a>
+        </div>
+    </main>
+
+
+
+
+    <script src="../assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Video bg -->
+    <script src="../assets/js/jquery.vide.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/animated.headline.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="../assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="../assets/js/jquery.barfiller.js"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/waypoints.min.js"></script>
+    <script src="../assets/js/jquery.countdown.min.js"></script>
+    <script src="../assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="../assets/js/contact.js"></script>
+    <script src="../assets/js/jquery.form.js"></script>
+    <script src="../assets/js/jquery.validate.min.js"></script>
+    <script src="../assets/js/mail-script.js"></script>
+    <script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Theme toggle (same logic as rest of site) -->
+    <script src="/assets/js/layout.js"></script>
+
+</body>
+
+</html>

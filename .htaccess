@@ -1,0 +1,57 @@
+Options -Indexes
+
+# Prevent access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|json|xml|yml|yaml|env|git|svn)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent access to composer and vendor files
+<FilesMatch "composer\.(json|lock)">
+    Require all denied
+</FilesMatch>
+
+# Block access to hidden files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Secure uploads directory
+<Directory "uploads">
+    Options -Indexes
+    <FilesMatch "\.(php|phtml|php3|php4|php5|phps|phar|cgi|pl|asp|aspx|jsp|sh)$">
+        Require all denied
+    </FilesMatch>
+</Directory>
+
+# Secure assets directory
+<Directory "assets">
+    Options -Indexes
+</Directory>
+
+# Secure vendor directory
+<Directory "vendor">
+    Require all denied
+</Directory>
+
+# Secure Doc directory
+<Directory "Doc">
+    Options -Indexes
+</Directory>
+
+# Secure templates directory
+<Directory "templates">
+    Options -Indexes
+</Directory>
+
+# Secure tests directory
+<Directory "tests">
+    Require all denied
+</Directory>
+
+# Secure questions csv directory
+<Directory "questions csv">
+    Require all denied
+</Directory>
+
+# Prevent directory browsing in all subdirectories
+Options -Indexes

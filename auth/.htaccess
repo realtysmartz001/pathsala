@@ -1,0 +1,6 @@
+Options -Indexes
+
+# Prevent access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|json|xml|yml|yaml)$">
+    Require all denied
+</FilesMatch>

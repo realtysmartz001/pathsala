@@ -1,0 +1,99 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Prevent access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|json|xml|yml|yaml)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent execution of PHP files in subdirectories
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
+
+# Allow only specific PHP files to execute
+<Files "index.php">
+    Require all granted
+</Files>
+<Files "admin_login.php">
+    Require all granted
+</Files>
+<Files "after_admin_login.php">
+    Require all granted
+</Files>
+<Files "admin_approve_reject.php">
+    Require all granted
+</Files>
+<Files "admin_change_set.php">
+    Require all granted
+</Files>
+<Files "admin_contact.php">
+    Require all granted
+</Files>
+<Files "admin_profile_details.php">
+    Require all granted
+</Files>
+<Files "admin_profiles.php">
+    Require all granted
+</Files>
+<Files "admin_results.php">
+    Require all granted
+</Files>
+<Files "admin_test.php">
+    Require all granted
+</Files>
+<Files "admin_user.php">
+    Require all granted
+</Files>
+<Files "admin_view_profile.php">
+    Require all granted
+</Files>
+<Files "export_all_profiles_pdf.php">
+    Require all granted
+</Files>
+<Files "export_profile_excel.php">
+    Require all granted
+</Files>
+<Files "export_profile_pdf.php">
+    Require all granted
+</Files>
+<Files "export_result_detail_pdf.php">
+    Require all granted
+</Files>
+<Files "export_results_pdf.php">
+    Require all granted
+</Files>
+<Files "export_users_excel.php">
+    Require all granted
+</Files>
+<Files "guest_tests.php">
+    Require all granted
+</Files>
+<Files "guest_tests_sets.php">
+    Require all granted
+</Files>
+<Files "mark_read_contact.php">
+    Require all granted
+</Files>
+
+# Secure subdirectories
+<Directory "events">
+    Options -Indexes
+    <FilesMatch "\.php$">
+        Require all granted
+    </FilesMatch>
+</Directory>
+
+<Directory "projects">
+    Options -Indexes
+    <FilesMatch "\.php$">
+        Require all granted
+    </FilesMatch>
+</Directory>
+
+<Directory "youtube">
+    Options -Indexes
+    <FilesMatch "\.php$">
+        Require all granted
+    </FilesMatch>
+</Directory>

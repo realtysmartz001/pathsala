@@ -1,0 +1,48 @@
+# Database configuration files
+includes/db_connect.php
+includes/db.php
+includes/db_user.php
+includes/db_contact.php
+
+# Sensitive files
+.env
+*.env
+config.php
+
+# Uploads
+uploads/*
+!uploads/.htaccess
+
+# Vendor
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Cache
+cache/
+tmp/
+
+# Composer
+composer.lock
+
+# Node
+node_modules/
+package-lock.json
+
+# Build
+dist/
+build/

@@ -1,0 +1,508 @@
+<?php
+session_start();
+$userName = isset($_SESSION['user_name']) ? $_SESSION['user_name']
+         : (isset($_SESSION['user_email']) ? $_SESSION['user_email'] : null);
+?>
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Realty Smartz Pathshala</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/slicknav.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+  <!--? Preloader Start -->
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="preloader-inner position-relative">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img pere-text">
+          <img src="assets/img/logo/loder.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader Start -->
+  <!-- Header Start -->
+  <div class="header-area header-transparent">
+    <div class="main-header ">
+      <div class="header-bottom  header-sticky">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="/Doc/img/Pathshala.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col-xl-10 col-lg-10">
+              <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                <!-- Main-menu -->
+                <div class="main-menu d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li class="active"><a href="index.html">Home</a></li>
+                      <li><a href="Project.html">Projects</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="#">Blog</a>
+                        <!--<ul class="submenu">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="blog_details.html">Blog Details</a></li>
+                          <li><a href="elements.html">Element</a></li>
+                        </ul>-->
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <!-- Button -->
+                      <!--  <li class="button-header margin-left "><a href="#" class="btn">Join</a></li> -->
+                     <?php if ($userName): ?>
+    <li class="button-header">
+        <div class="dropdown" style="position: relative; display: inline-block;">
+            <button class="btn btn3 dropdown-toggle" style="cursor:pointer;">
+                Your Account
+            </button>
+            <ul class="dropdown-menu" style="display:none; position:absolute; background:#fff; min-width:180px; box-shadow:0 4px 6px rgba(0,0,0,0.1); border-radius:5px; z-index:1000; padding:10px 0; list-style:none; margin:0;">
+                <li><a href="profile_form.php" style="display:block; padding:8px 15px; color:#333; text-decoration:none;">Create Profile</a></li>
+                <li><a href="take_test.php" style="display:block; padding:8px 15px; color:#333; text-decoration:none;">Aptitude Test</a></li>
+                <li><a href="#" style="display:block; padding:8px 15px; color:#333; text-decoration:none;">Chat with Others</a></li>
+                <li><a href="#" style="display:block; padding:8px 15px; color:#333; text-decoration:none;">Know About Your Team</a></li>
+                <li><a href="index_logout.php" style="display:block; padding:8px 15px; color:#333; text-decoration:none;">Logout</a></li>
+            </ul>
+        </div>
+    </li>
+<?php else: ?>
+    <li class="button-header">
+        <a href="login.html" class="btn btn3">Log in</a>
+    </li>
+<?php endif; ?>
+
+<style>
+/* Dropdown hover effect */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+.dropdown-menu li a:hover {
+    background: #f0f0f0;
+}
+</style>
+                       
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+  <main>
+    <!--? slider Area Start-->
+    <section class="slider-area slider-area2">
+      <div class="slider-active">
+        <!-- Single Slider -->
+        <div class="single-slider slider-height2">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 col-lg-11 col-md-12">
+                <div class="hero__caption hero__caption2">
+                  <h1 data-animation="bounceIn" data-delay="0.2s">Company insights</h1>
+                  <!-- breadcrumb Start-->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="Projects.html">Projects</a></li>
+                      <li class="breadcrumb-item"><a href="Shapoorji.html">Shapoorji Pallonji</a></li>
+                    </ol>
+                  </nav>
+                  <!-- breadcrumb End -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--? Blog Area Start-->
+    <section class="blog_area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="blog_left_sidebar">
+              <article class="blog_item">
+                <div class="blog_item_img">
+                  <img class="card-img rounded-0" src="shapoorji.png" alt="">
+                  <!--  <a href="#" class="blog_item_date">
+                                        <h3>15</h3>
+                                        <p>Jan</p>
+                                    </a> -->
+                </div>
+                <div class="blog_details">
+                  <a class="d-inline-block" href="blog_details.html">
+                    <h2 class="blog-head" style="color: #2d2d2d;">Shapoorji Pallonji</h2>
+                  </a>
+                  <p>Shapoorji and Pallonji is a premium residential project offering modern living
+                    with world-class amenities, sustainable design, and exceptional construction
+                    quality in a prime Gurgaon location.</p>
+                  <!--  <ul class="blog-info-link">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    </ul> -->
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+              <aside class="single_sidebar_widget search_widget">
+                <form action="#">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder='Search Keyword'
+                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                      <div class="input-group-append">
+                        <button class="btns" type="button"><i class="ti-search"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                    type="submit">Search</button>
+                </form>
+              </aside>
+              <aside class="single_sidebar_widget post_category_widget">
+                <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
+                <ul class="list cat-list">
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Resaurant food</p>
+                      <p>(37)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Travel news</p>
+                      <p>(10)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Modern technology</p>
+                      <p>(03)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Product</p>
+                      <p>(11)</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Inspiration</p>
+                      <p>21</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-flex">
+                      <p>Health Care (21)</p>
+                      <p>09</p>
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+              <aside class="single_sidebar_widget popular_post_widget">
+                <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
+                <div class="media post_item">
+                  <img src="assets/img/post/post_1.png" alt="post">
+                  <div class="media-body">
+                    <a href="blog_details.html">
+                      <h3 style="color: #2d2d2d;">From life was you fish...</h3>
+                    </a>
+                    <p>January 12, 2019</p>
+                  </div>
+                </div>
+                <div class="media post_item">
+                  <img src="assets/img/post/post_2.png" alt="post">
+                  <div class="media-body">
+                    <a href="blog_details.html">
+                      <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
+                    </a>
+                    <p>02 Hours ago</p>
+                  </div>
+                </div>
+                <div class="media post_item">
+                  <img src="assets/img/post/post_3.png" alt="post">
+                  <div class="media-body">
+                    <a href="blog_details.html">
+                      <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
+                    </a>
+                    <p>03 Hours ago</p>
+                  </div>
+                </div>
+                <div class="media post_item">
+                  <img src="assets/img/post/post_4.png" alt="post">
+                  <div class="media-body">
+                    <a href="blog_details.html">
+                      <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
+                    </a>
+                    <p>01 Hours ago</p>
+                  </div>
+                </div>
+              </aside>
+              <aside class="single_sidebar_widget tag_cloud_widget">
+                <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
+                <ul class="list">
+                  <li>
+                    <a href="#">project</a>
+                  </li>
+                  <li>
+                    <a href="#">love</a>
+                  </li>
+                  <li>
+                    <a href="#">technology</a>
+                  </li>
+                  <li>
+                    <a href="#">travel</a>
+                  </li>
+                  <li>
+                    <a href="#">restaurant</a>
+                  </li>
+                  <li>
+                    <a href="#">life style</a>
+                  </li>
+                  <li>
+                    <a href="#">design</a>
+                  </li>
+                  <li>
+                    <a href="#">illustration</a>
+                  </li>
+                </ul>
+              </aside>
+              <aside class="single_sidebar_widget instagram_feeds">
+                <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
+                <ul class="instagram_row flex-wrap">
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="assets/img/post/post_5.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="assets/img/post/post_6.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="assets/img/post/post_7.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="assets/img/post/post_8.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="assets/img/post/post_9.png" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img class="img-fluid" src="assets/img/post/post_10.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+              <aside class="single_sidebar_widget newsletter_widget">
+                <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
+                <form action="#">
+                  <div class="form-group">
+                    <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                  </div>
+                  <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                    type="submit">Subscribe</button>
+                </form>
+              </aside>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Blog Area End -->
+  </main>
+  <footer>
+    <div class="footer-wrappper footer-bg">
+       <!-- Footer Start-->
+                <div class="footer-area footer-padding">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="single-footer-caption mb-30">
+                                        <!-- logo -->
+                                        <div class="footer-logo mb-25">
+                                            <a href="index.html"><img src="Pathshala.png" alt=""></a>
+                                        </div>
+                                        <div class="footer-tittle">
+                                            <div class="footer-pera">
+                                                <p>Unlock career growth, continuous learning, and leadership
+                                                    opportunities
+                                                    in a dynamic real estate environment.</p>
+                                            </div>
+                                        </div>
+                                        <!-- social -->
+                                        <div class="footer-social">
+                                            <a href="https://www.linkedin.com/company/realtysmartz/posts/?feedView=all"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                            <a href="https://www.instagram.com/realtysmartz/?hl=en"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a
+                                                href="https://www.youtube.com/results?search_query=Realthy+smartz+pvt+ltd"><i
+                                                    class="fab fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="footer-tittle">
+                                        <h4>Our solutions</h4>
+                                        <ul>
+                                        <li><a href="Project.html">DLF</a></li>
+                                        <li><a href="Project.html">Shapoorji Pallonji</a></li>
+                                        <li><a href="Project.html">Ganga Realty</a></li>
+                                        <li><a href="Project.html">Signature Global</a></li>
+                                        <li><a href="Project.html">M3M</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="footer-tittle">
+                                        <h4>Support</h4>
+                                        <h4>Support</h4>
+                                    <ul>
+                                        <li><a href="Project.html">Heritage Homes Plots</a></li>
+                                        <li><a href="Project.html">Omaxe The State</a></li>
+                                        <li><a href="Project.html">Trehan</a></li>
+                                        <li><a href="Project.html">Danube Properties</a></li>
+                                        <li><a href="Project.html">Dubai Real Estate</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                <div class="single-footer-caption mb-50">
+                                    <div class="footer-tittle">
+                                        <h4>Company</h4>
+                                        <ul>
+                                            <li><a href="#">Design & creatives</a></li>
+                                            <li><a href="#">Telecommunication</a></li>
+                                            <li><a href="#">Restaurant</a></li>
+                                            <li><a href="#">Programing</a></li>
+                                            <li><a href="#">Architecture</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      <!-- footer-bottom area -->
+      <div class="footer-bottom-area">
+        <div class="container">
+          <div class="footer-border">
+            <div class="row d-flex align-items-center">
+              <div class="col-xl-12 ">
+                <div class="footer-copy-right text-center">
+                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    © 2025 Realty Smartz Pathshala.  All rights reserved |
+                                     Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                            href="https://engagexpert.in/" target="_blank">EngageXpert</a>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End-->
+    </div>
+  </footer>
+  <!-- Scroll Up -->
+  <div id="back-top">
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+  </div>
+  <!-- JS here -->
+
+  <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+  <!-- Jquery, Popper, Bootstrap -->
+  <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Jquery Mobile Menu -->
+  <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+  <!-- Jquery Slick , Owl-Carousel Plugins -->
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <!-- One Page, Animated-HeadLin -->
+  <script src="./assets/js/wow.min.js"></script>
+  <script src="./assets/js/animated.headline.js"></script>
+  <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+  <!-- Date Picker -->
+  <script src="./assets/js/gijgo.min.js"></script>
+  <!-- Nice-select, sticky -->
+  <script src="./assets/js/jquery.nice-select.min.js"></script>
+  <script src="./assets/js/jquery.sticky.js"></script>
+
+  <!-- counter , waypoint,Hover Direction -->
+  <script src="./assets/js/jquery.counterup.min.js"></script>
+  <script src="./assets/js/waypoints.min.js"></script>
+  <script src="./assets/js/jquery.countdown.min.js"></script>
+  <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+  <!-- contact js -->
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/jquery.form.js"></script>
+  <script src="./assets/js/jquery.validate.min.js"></script>
+  <script src="./assets/js/mail-script.js"></script>
+  <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+  <!-- Jquery Plugins, main Jquery -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

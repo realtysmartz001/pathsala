@@ -56,77 +56,77 @@ try {
    ================================================ */
         :root,
         [data-theme="dark"] {
-            --gold: #FF6B35;
-            --gold-light: #FF8C5A;
-            --gold-pale: #FFB088;
-            --accent-blue: #4ECDC4;
-            --accent-purple: #A855F7;
-            --accent-pink: #EC4899;
+            --gold: #00D4FF;
+            --gold-light: #00B8E6;
+            --gold-pale: #0099CC;
+            --accent-blue: #00FF88;
+            --accent-purple: #00CC6A;
+            --accent-pink: #00E676;
 
-            --bg-1: #0f0f23;
-            --bg-2: #1a1a2e;
-            --bg-3: #16213e;
-            --bg-4: #0f3460;
+            --bg-1: #0a1628;
+            --bg-2: #0f1f35;
+            --bg-3: #142842;
+            --bg-4: #0d1e30;
 
-            --glass: rgba(255, 255, 255, 0.08);
-            --glass-border: rgba(255, 107, 53, 0.25);
-            --glass-hover: rgba(255, 107, 53, 0.15);
+            --glass: rgba(0, 212, 255, 0.05);
+            --glass-border: rgba(0, 212, 255, 0.20);
+            --glass-hover: rgba(0, 212, 255, 0.12);
 
             --text-primary: #ffffff;
             --text-secondary: rgba(255, 255, 255, 0.85);
             --text-muted: rgba(255, 255, 255, 0.65);
             --text-dim: rgba(255, 255, 255, 0.40);
 
-            --nav-bg: rgba(15, 15, 35, 0.90);
-            --card-bg: rgba(255, 255, 255, 0.06);
-            --card-border: rgba(255, 255, 255, 0.10);
-            --section-line: rgba(255, 107, 53, 0.50);
+            --nav-bg: rgba(10, 22, 40, 0.90);
+            --card-bg: rgba(0, 212, 255, 0.03);
+            --card-border: rgba(0, 212, 255, 0.15);
+            --section-line: rgba(0, 212, 255, 0.40);
 
-            --proj-overlay-start: rgba(15, 15, 35, 0.98);
-            --proj-overlay-mid: rgba(15, 15, 35, 0.60);
-            --footer-bg: #0f0f23;
-            --scrollbar-track: #1a1a2e;
+            --proj-overlay-start: rgba(10, 22, 40, 0.98);
+            --proj-overlay-mid: rgba(10, 22, 40, 0.60);
+            --footer-bg: #0a1628;
+            --scrollbar-track: #0f1f35;
 
             --shadow-card: 0 25px 60px rgba(0, 0, 0, 0.5);
             --shadow-hover: 0 35px 80px rgba(0, 0, 0, 0.6);
-            --shadow-gold: 0 15px 40px rgba(255, 107, 53, 0.3);
+            --shadow-gold: 0 15px 40px rgba(0, 212, 255, 0.25);
         }
 
         [data-theme="light"] {
-            --gold: #FF6B35;
-            --gold-light: #FF8C5A;
-            --gold-pale: #FFB088;
-            --accent-blue: #4ECDC4;
-            --accent-purple: #A855F7;
-            --accent-pink: #EC4899;
+            --gold: #0088CC;
+            --gold-light: #0099E6;
+            --gold-pale: #00AAFF;
+            --accent-blue: #00CC66;
+            --accent-purple: #00B85D;
+            --accent-pink: #00D473;
 
-            --bg-1: #ffffff;
-            --bg-2: #f8fafc;
-            --bg-3: #f1f5f9;
-            --bg-4: #e2e8f0;
+            --bg-1: #f0f8ff;
+            --bg-2: #ffffff;
+            --bg-3: #e8f4f8;
+            --bg-4: #d0e8f0;
 
-            --glass: rgba(255, 255, 255, 0.85);
-            --glass-border: rgba(255, 107, 53, 0.20);
-            --glass-hover: rgba(255, 107, 53, 0.10);
+            --glass: rgba(0, 136, 204, 0.08);
+            --glass-border: rgba(0, 136, 204, 0.20);
+            --glass-hover: rgba(0, 136, 204, 0.12);
 
-            --text-primary: #1e293b;
-            --text-secondary: #475569;
-            --text-muted: #64748b;
-            --text-dim: #94a3b8;
+            --text-primary: #0a1628;
+            --text-secondary: #1a2d45;
+            --text-muted: #3a4d65;
+            --text-dim: #5a6d85;
 
-            --nav-bg: rgba(255, 255, 255, 0.95);
+            --nav-bg: rgba(240, 248, 255, 0.95);
             --card-bg: rgba(255, 255, 255, 0.90);
-            --card-border: rgba(255, 107, 53, 0.15);
-            --section-line: rgba(255, 107, 53, 0.30);
+            --card-border: rgba(0, 136, 204, 0.15);
+            --section-line: rgba(0, 136, 204, 0.30);
 
-            --proj-overlay-start: rgba(30, 41, 59, 0.95);
-            --proj-overlay-mid: rgba(30, 41, 59, 0.50);
-            --footer-bg: #1e293b;
-            --scrollbar-track: #f1f5f9;
+            --proj-overlay-start: rgba(10, 22, 40, 0.95);
+            --proj-overlay-mid: rgba(10, 22, 40, 0.50);
+            --footer-bg: #0a1628;
+            --scrollbar-track: #e8f4f8;
 
-            --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.08);
-            --shadow-hover: 0 30px 70px rgba(0, 0, 0, 0.12);
-            --shadow-gold: 0 12px 35px rgba(255, 107, 53, 0.25);
+            --shadow-card: 0 20px 50px rgba(0, 136, 204, 0.15);
+            --shadow-hover: 0 30px 70px rgba(0, 136, 204, 0.25);
+            --shadow-gold: 0 12px 35px rgba(0, 136, 204, 0.3);
         }
 
         /* ================================================
@@ -397,21 +397,21 @@ try {
             color: var(--gold) !important;
             font-size: 13.5px;
             font-weight: 600;
-            border: 1px solid rgba(255, 107, 53, 0.40);
+            border: 1px solid rgba(0, 212, 255, 0.40);
             padding: 9px 22px;
             border-radius: 8px;
             transition: all 0.3s;
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 107, 53, 0.08);
+            background: rgba(0, 212, 255, 0.08);
         }
 
         .nav-login-btn:hover {
-            background: linear-gradient(135deg, var(--gold), var(--accent-pink));
+            background: linear-gradient(135deg, var(--gold), var(--accent-blue));
             color: #fff !important;
             border-color: var(--gold);
-            box-shadow: 0 0 25px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.4);
             transform: translateY(-2px);
         }
 
@@ -424,7 +424,7 @@ try {
             display: inline-flex;
             align-items: center;
             gap: 9px;
-            background: linear-gradient(135deg, var(--gold), var(--accent-purple));
+            background: linear-gradient(135deg, var(--gold), var(--accent-blue));
             color: #ffffff;
             font-size: 13.5px;
             font-weight: 700;
@@ -434,12 +434,12 @@ try {
             cursor: pointer;
             font-family: 'Inter', sans-serif;
             transition: all 0.3s;
-            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.35);
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.35);
             white-space: nowrap;
         }
 
         .nav-account-btn:hover {
-            box-shadow: 0 8px 35px rgba(255, 107, 53, 0.5);
+            box-shadow: 0 8px 35px rgba(0, 212, 255, 0.5);
             transform: translateY(-2px);
         }
 
@@ -548,14 +548,14 @@ try {
 
         .nav-hamburger:hover {
             border-color: var(--gold);
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(168, 85, 247, 0.15));
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 204, 106, 0.15));
         }
 
         .nav-hamburger span {
             display: block;
             width: 22px;
             height: 2px;
-            background: linear-gradient(90deg, var(--gold), var(--accent-purple));
+            background: linear-gradient(90deg, var(--gold), var(--accent-blue));
             border-radius: 2px;
             transition: all 0.3s;
         }
@@ -652,11 +652,11 @@ try {
             gap: 10px;
             padding: 13px;
             border-radius: 10px;
-            background: linear-gradient(135deg, var(--gold), var(--accent-pink));
+            background: linear-gradient(135deg, var(--gold), var(--accent-blue));
             color: #ffffff !important;
             font-weight: 700;
             font-size: 14.5px;
-            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
         }
 
         .mobile-account-section {
@@ -948,7 +948,7 @@ try {
         .hero-orb-1 {
             width: 600px;
             height: 600px;
-            background: linear-gradient(135deg, var(--gold), var(--accent-purple));
+            background: linear-gradient(135deg, var(--gold), var(--accent-blue));
             opacity: 0.15;
             top: -200px;
             right: -100px;
@@ -959,7 +959,7 @@ try {
         .hero-orb-2 {
             width: 400px;
             height: 400px;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-pink));
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
             opacity: 0.12;
             bottom: -100px;
             left: -50px;
@@ -970,7 +970,7 @@ try {
         .hero-orb-3 {
             width: 300px;
             height: 300px;
-            background: var(--accent-blue);
+            background: linear-gradient(135deg, var(--gold), var(--accent-pink));
             opacity: 0.08;
             top: 50%;
             left: 30%;
@@ -1116,14 +1116,14 @@ try {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(135deg, var(--gold), var(--accent-pink));
+            background: linear-gradient(135deg, var(--gold), var(--accent-blue));
             color: #ffffff !important;
             font-weight: 700;
             font-size: 14px;
             padding: 15px 34px;
             border-radius: 12px;
             transition: all 0.3s;
-            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 30px rgba(0, 212, 255, 0.4);
             position: relative;
             overflow: hidden;
         }
@@ -1139,7 +1139,7 @@ try {
 
         .btn-luxury:hover {
             transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 16px 50px rgba(255, 107, 53, 0.5);
+            box-shadow: 0 16px 50px rgba(0, 212, 255, 0.5);
         }
 
         .btn-luxury:hover::before {
@@ -1162,11 +1162,11 @@ try {
         }
 
         .btn-glass:hover {
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            background: linear-gradient(135deg, var(--accent-blue), var(--gold));
             border-color: var(--accent-blue);
             color: #ffffff !important;
             transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 12px 35px rgba(78, 205, 196, 0.3);
+            box-shadow: 0 12px 35px rgba(0, 212, 255, 0.3);
         }
 
         .hero-mini-stats {
